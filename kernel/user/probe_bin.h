@@ -1,0 +1,17 @@
+/* 自动生成的文件，请勿手工修改。
+ * 来源: build/probe.bin (24 字节)
+ * 重新生成: python3 tools/gen_userbin.py
+ * 用途: usermode_run_image() 把这段机器码拷进 Ring3 代码页执行。 */
+#ifndef PROBE_BIN_H
+#define PROBE_BIN_H
+
+#include <stdint.h>
+
+static const uint8_t probe_bin[] = {
+    0x48, 0xc7, 0xc0, 0x00, 0x00, 0x00, 0x80, 0x48, 0x8b, 0x00, 0xb8, 0x3c, 0x00, 0x00, 0x00, 0xbf, 
+    0x01, 0x00, 0x00, 0x00, 0x0f, 0x05, 0xeb, 0xfe, 
+};
+
+static const uint64_t probe_bin_len = sizeof(probe_bin);
+
+#endif
