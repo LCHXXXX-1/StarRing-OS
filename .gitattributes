@@ -1,0 +1,20 @@
+# 强制指定 C 和头文件的语言
+*.c linguist-language=C
+*.h linguist-language=C
+
+# 强制指定汇编语言（防止 Gitee 识别成文本）
+*.asm linguist-language=Assembly
+*.s linguist-language=Assembly
+
+# 明确指定 Python 脚本
+*.py linguist-language=Python
+
+# 排除大文件（字体、图片、二进制），不让它们参与语言统计
+*.sfn -linguist-detectable
+*.raw -linguist-detectable
+*.sys -linguist-detectable
+*.EFI -linguist-detectable
+*.bin -linguist-detectable
+
+# 把 limine 这个预编译目录完全排除在统计外
+limine/* -linguist-detectable
